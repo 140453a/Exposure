@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Home extends Component {
 render() {
     return (
-      <div>
+      <React.Fragment>
         <h1>Home!</h1>
-      </div>
+      </React.Fragment>
     );
   }
 }
