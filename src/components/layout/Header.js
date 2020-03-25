@@ -19,9 +19,13 @@ class Header extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <div>
-          <h1>You are at {location.pathname}</h1>
-        </div>
+        {/*
+          <div>
+            <h1>You are at {location.pathname}</h1>
+          </div>
+          </React.Fr
+
+        */}
         </React.Fragment>
 
 

@@ -19,6 +19,15 @@
 
 }
 
+body {
+    background-color:	#F5F5F5
+}
+
+.maintext {
+  text-align: left;
+  background-color:	#FFFFFF
+}
+
 #active {
   color: red;
   background-color: #282c34;
