@@ -11,7 +11,7 @@ class Trainer extends Component {
             </div>
             <div className={"col-lg"}>
               F-Stop
-              <Slider min="2" max="22" cur="2" type="f-stop" step="1"/>
+              <Slider min="1" max="8" cur="1" type="f-stop" step="1"/>
               Shutter Speed
               <Slider min="1" max="8" cur="1" type="shut" step="1" />
               ISO

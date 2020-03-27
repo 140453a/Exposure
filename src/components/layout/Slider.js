@@ -15,7 +15,7 @@ class Slider extends Component {
   }
 
   locked(event){
-    this.setState({err: 'ISO is locked at 200.'});
+    this.setState({err: 'This picture was taken at 200 ISO.'});
   }
 
   render(){
@@ -51,6 +51,38 @@ class Slider extends Component {
               break;
           }
     }
+    if(this.props.type === "f-stop" ){
+        switch (this.state.value) {
+          case "1":
+            result = "F/2"
+            break;
+          case "2":
+            result = "F/2.8"
+            break;
+          case "3":
+            result = "F/4"
+            break;
+          case "4":
+            result = "F/5.6"
+            break;
+          case "5":
+            result = "F/8"
+            break;
+          case "6":
+            result = "F/11"
+            break;
+          case "7":
+            result = "F/16"
+            break;
+          case "8":
+            result = "F/22"
+            break;
+          default:
+            result = "F/2"
+            break;
+        }
+    }
+
     return(
       <div>
        <label>
