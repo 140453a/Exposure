@@ -19,13 +19,24 @@
 
 }
 
+.error {
+  color: red;
+}
+
 body {
-    background-color:	#F5F5F5
+    background-color:	#F5F5F5;
 }
 
 .maintext {
   text-align: left;
-  background-color:	#FFFFFF
+  background-color:	#FFFFFF;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.homeHeader {
+  padding-top: 25px;
+  padding-bottom: -10px;
 }
 
 #active {
