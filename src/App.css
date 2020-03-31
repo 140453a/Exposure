@@ -1,3 +1,64 @@
+
+.expose1 {
+  filter: brightness(200%)
+}
+
+.expose2 {
+  filter: brightness(400%)
+}
+
+.expose3 {
+  filter: brightness(800%)
+}
+
+.expose4 {
+  filter: brightness(1600%)
+}
+
+.expose5 {
+  filter: brightness(3200%)
+}
+
+.expose6 {
+  filter: brightness(6400%)
+}
+
+.expose7 {
+  filter: brightness(12800%)
+}
+
+.expose0 {
+  ;
+}
+
+.expose-1 {
+  filter: brightness(50%);
+}
+
+.expose-2 {
+  filter: brightness(25%)
+}
+
+.expose-3 {
+  filter: brightness(12.5%)
+}
+
+.expose-4 {
+  filter: brightness(6.25%)
+}
+
+.expose-5 {
+  filter: brightness(3.125%)
+}
+
+.expose-6 {
+  filter: brightness(1.563%)
+}
+
+.expose-7 {
+  filter: brightness(0%)
+}
+
 .App {
   text-align: center;
 }
@@ -27,11 +88,24 @@ body {
     background-color:	#F5F5F5;
 }
 
+.sliders {
+  margin-top: 20px;
+}
+
+.sliderresult {
+  margin-bottom: 25px;
+  margin-top: -10px;
+}
+
+
 .maintext {
   text-align: left;
   background-color:	#FFFFFF;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-top: 20px;
+  padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .homeHeader {

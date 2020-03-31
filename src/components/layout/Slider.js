@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
-
+import Alert from 'react-bootstrap/Alert'
 
 class Slider extends Component {
   constructor(props) {
     super(props)
     this.state = {value: props.cur,
-                  err: ''}
+                  err: false}
     this.handleChange = this.handleChange.bind(this)
     this.locked = this.locked.bind(this)
   }
 
   handleChange(event) {
     this.setState({value: event.target.value});
+    this.props.handler(event.target.value);
   }
 
   locked(event){
-    this.setState({err: 'This picture was taken at 200 ISO.'});
+    this.setState({err: true});
   }
 
   render(){
@@ -83,6 +84,7 @@ class Slider extends Component {
         }
     }
 
+
     return(
       <div>
        <label>
@@ -93,8 +95,27 @@ class Slider extends Component {
            value={!this.props.locked ? this.state.value : this.props.cur}
            onChange={!this.props.locked ? this.handleChange : this.locked}
            step={this.props.step}/>
-         {result}
-         <div className="error">{this.state.err}</div>
+         <div className="sliderresult"> {result} </div>
+
+         {/* This is the alert box for changing ISO */}
+         {(() => {
+           if (this.state.err) {
+             return (
+               <Alert variant="danger" onClose={() => this.setState({err: false})} dismissible>
+               <Alert.Heading>The ISO for this photograph is 200!</Alert.Heading>
+                 <p>
+                  Please focus on changing the F-stop and shutter speed for now, particularly how
+                  the depth of field (the blurriness of the background) changes when the F-stop is changed.
+                 </p>
+               </Alert>
+             )
+           } else {
+             return (
+               <div></div>
+             )
+           }
+         })()}
+
        </label>
      </div>
     );
