@@ -7,7 +7,11 @@ const images = {
     n5: require("./5.jpg"),
     n6: require("./6.jpg"),
     n7: require("./7.jpg"),
-    n8: require("./8.jpg")    
+    n8: require("./8.jpg"),
+    triangle: require("./triangle.jpg")
+  },
+  home: {
+    triangle: require("./triangle.jpg")
   }
 };
 

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-
+import Images from '../../pictures/Images'
 
 class Home extends Component {
 render() {
     return (
         <div className={"maintext container"}>
           <div className={"row"}>
-            <div className={"col-lg-12"}>
+            <div className={"col-lg"}>
               <h1 className={"homeHeader"}>What Is Exposure?</h1>
               Exposure is the amount of light that hits the sensor or film of your camera.
               The film or sensor captures this light and saves the impression in either film or digital format.
@@ -18,7 +18,7 @@ render() {
 
           <h4 className={"homeHeader"}>What is Shutter Speed?</h4>
           <div className={"row"}>
-            <div className={"col-lg-12"}>
+            <div className={"col-lg"}>
               Shutter speed, along with aperture, directly affect the amount of light that reaches the film by changing mechanisms inside the lens.
               Shutter speed does this by altering the amount of time that the light hits the film.
               This is measured in seconds. So if you set the shutter speed to 1/4000, the film is exposed to light
@@ -39,7 +39,7 @@ render() {
 
           <h4 className={"homeHeader"}>What is Aperture?</h4>
           <div className={"row"}>
-            <div className={"col-lg-12"}>
+            <div className={"col-lg"}>
               Aperture is the other variable that directly impacts that amount of light that hits the film by changing mechanisms inside the lens.
               The aperture is the width that the shutters open to when you press the capture button.
               Aperture is measured in "F-stops", with the notation F/x where x is a number usually between ~1.8 to ~ 22.
@@ -58,15 +58,15 @@ render() {
 
           <h4 className={"homeHeader"}>What is ISO?</h4>
           <div className={"row"}>
-            <div className={"col-lg-12"}>
+            <div className={"col-lg"}>
               ISO is the final variable that affects the exposure of a photograph, and it happens inside the film or sensor of the camera.
               Simply put, ISO is the sensitivity of the film or camera. It is a measurement of how much light is required for it to be captured by the film.
               High ISO numbers mean that the film is more sensitive to light, and lower means less sensitive.
               Therefore, films with ISOs in the range 100-800 are good all-purpose films for daylight photography.
               <br />
               <br />
-              For film, ISO is relatively static. Every film that is bought has a specified ISO that can not be changed, and it is not easy to change out films between pictures.
-              Therefore, usually aperture and shutterspeed are altered instead of ISO to properly expose a picture, but this is not the case for digital cameras.
+              For film, ISO is relatively static. Every film that is bought has a specified ISO that cannot be changed, and it is not easy to change out films between pictures.
+              Therefore, usually aperture and shutter speed are altered instead of ISO to properly expose a picture, but this is not the case for digital cameras.
               <br />
               <br />
               The downside of a high ISO is that the pictures get "grainy" when using film, or "noisy" when using digital cameras.
@@ -77,8 +77,8 @@ render() {
 
           <h4 className={"homeHeader"}>Exposure Triangle</h4>
           <div className={"row"}>
-            <div className={"col-lg-12"}>
-              triangle
+            <div className={"col-lg"}>
+                <img src={Images.home.triangle} alt="An exposure triangle." className="img-fluid triangle"/>
             </div>
           </div>
       </div>
