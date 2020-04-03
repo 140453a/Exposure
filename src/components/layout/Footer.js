@@ -5,7 +5,7 @@ render() {
     return (
       <footer class="footer">
         <div class="container">
-          <span class="text-muted"> Copyright © 2020 Joshua Alexander. All Rights Reserved</span>
+          <span class="text-muted"> Copyright © 2020 Joshua Alexander. </span>
         </div>
       </footer>
     );
