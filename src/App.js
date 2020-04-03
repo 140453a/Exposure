@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import Gallery from './components/pages/Gallery'
 import Trainer from './components/pages/Trainer'
 import Header from './components/layout/Header'
+import Footer from './components/layout/Footer'
 
 class App extends Component {
 render(){
@@ -13,14 +14,10 @@ render(){
       <Router>
         <div className="App">
           <Header />
-          <Route exact path="/" render={props => (
-            <React.Fragment>
-              <Home />
-            </React.Fragment>
-          )} />
+          <Route exact path="/" render={props => (<Home />)} />
           <Route path="/gallery" component={Gallery} />
           <Route path="/trainer" component={Trainer} />
-
+          <Footer />
         </div>
       </Router>
     );

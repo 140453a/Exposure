@@ -95,6 +95,7 @@
 body {
     background-image: url("./pictures/dot-grid.png");
     background-color:	#F5F5F5;
+    margin-bottom: 40px;
 }
 
 .sliders {
@@ -202,4 +203,18 @@ active {
 
 .imggrid {
   object-fit: scale-down;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px; /* Set the fixed height of the footer here */
+  line-height: 40px; /* Vertically center the text there */
+  background-color: #f5f5f5;
 }

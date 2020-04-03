@@ -68,6 +68,9 @@ class Gallery extends Component {
          <div className="slidecontainer">
            <GallerySlider handler={this.sliderHandler} min="-2" max="18" cur={this.state.slider} step="1"/>
          </div>
+         <div className="maintext text-center">
+          Uh oh... There doesn't appear to be any images for this exposure!
+         </div>
         </div>
       )
 
